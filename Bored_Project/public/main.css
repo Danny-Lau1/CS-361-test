@@ -1,0 +1,385 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+/* Add fonts from the app's server 
+    @font-face {                
+      font-family: 'FontName';
+      src: url('FontName.woff2') format('woff2');
+    } 
+    ...or hosted services like Google Fonts 
+    @import url(//fonts.googleapis.com/css?family=Font+Name);
+  */
+
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+/* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */
+
+/* Component-specific stylesheets, if any. 
+    @import "component1.css";   
+  */
+
+/*   ----- Variables  -----  */
+:root {
+    --header: rgb(246, 235, 133);
+    --header_background: rgba(133, 161, 246, 0.708);
+    --introduction: rgb(246, 175, 133);
+    --introduction_background: rgba(81, 53, 238, 0.736);
+    --game_container: rgb(185, 22, 22);
+    --game_container_background: rgb(232, 171, 96);
+    --select: rgb(210, 219, 243);
+    --select-background: rgba(232, 96, 96, 0.709);
+
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+    /* Can alternatively define in html {} or :root {} */
+    background-image: url(images/4820.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+
+
+
+    /*
+    background-color: ;
+    
+    color: ;
+    font-family: ;
+
+    margin: ;
+    padding: ;*/
+    /* Define with at least one font name and its related generic family name.*/
+
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+    color: var(--header);
+    background-color: var(--header_background);
+    margin-bottom: 50px;
+
+    border: 10px solid;
+    text-align: center;
+}
+
+main {}
+
+section {}
+
+.introduction {
+    color: var(--introduction);
+    background-color: var(--introduction_background);
+    margin-bottom: 50px;
+    padding-left: 20px;
+    border: 10px solid;
+
+}
+
+.game-container {
+    color: var(--game_container);
+    background-color: var(--game_container_background);
+    margin-bottom: 50px;
+    border: 10px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+
+}
+
+.game-container>fieldset {
+    flex-basis: calc(50% - 40px);
+
+
+}
+
+
+
+
+#selectordiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+article {}
+
+
+#topic1 {}
+
+#topic2 {}
+
+div {}
+
+aside {}
+
+footer {}
+
+/* ----- Anchors ----- Text links */
+a {}
+
+a:link {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {}
+
+nav a {}
+
+nav a:hover {}
+
+/*  -----  Typography  ----- */
+p {}
+
+br {}
+
+ol,
+ul,
+dl {}
+
+li {}
+
+dt {}
+
+dd {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    text-align: center;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {}
+
+/*  ----- Table ----- */
+table {}
+
+caption {}
+
+thead {}
+
+tbody {}
+
+tfoot {}
+
+tr {}
+
+tr:nth-child(even) {}
+
+th {}
+
+td {}
+
+td:nth-child(1) {}
+
+colgroup {}
+
+data {}
+
+datalist {}
+
+
+/*  ----- Form ----- */
+form {}
+
+fieldset {}
+
+legend {
+    color: var(--game_container);
+    background-color: var(--game_container_background);
+    border: 2px solid;
+}
+
+label {}
+
+button {}
+
+input {}
+
+output {}
+
+meter {}
+
+progress {}
+
+select {
+    color: var(--select);
+    display: block;
+    align-self: center;
+    width: 250px;
+    height: 60px;
+    background-color: var(--select-background);
+    font-size: 1.5em;
+
+
+}
+
+.slider {
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+
+}
+
+#slider {
+    width: 70%;
+    /* Full-width */
+    height: 25px;
+}
+
+#submitreview {
+    color: var(--game_container);
+    background-color: var(--game_container_background);
+    height: 50px;
+
+}
+
+optgroup {}
+
+option {}
+
+textarea {}
+
+/* ----- Media ----- */
+figure {}
+
+figcaption {}
+
+figure img {}
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.gallery {}
+
+.floatright {}
+
+.floatleft {}
+
+.center-middle {}
+
+.ten {}
+
+.twenty {}
+
+.thirty {}
+
+.forty {}
+
+.fifty {}
+
+.sixty {}
+
+.seventy {}
+
+.eighty {}
+
+.radius {}
+
+.circle {}
+
+.boxshadow {}
+
+.tshadow {}
+
+.gradient {}
+
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}

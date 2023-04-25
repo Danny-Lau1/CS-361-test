@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <title>Danny Lau</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>The Bored Solution</h1>
+    </header>
+
+    <main>
+        <section>
+            <article class="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    Have you found yourself doom scrolling on your phone? Maybe you're on your second hour watching cat
+                    videos on TikTok or yet another video of someone lambasting Salt Bae's restaurant. Either way, we
+                    get it. You're bored. Welcome the The Bored Solution. Here, we can help solve your boredom.
+                </p>
+
+                <p>Here are the guidelines for generating an activity:</p>
+                <ol>
+                    <li>
+                        Select a type of activity. These include "Education," "Recreational," "Social," and many more.
+                    </li>
+                    <li>
+                        Select a relative price range. Sliding the slider from left to right will result generate
+                        activities that are cheaper to more expensive.
+                    </li>
+                    <li>
+                        Select a the number of people you would like to involve in this activity.
+                    </li>
+                    <li>
+                        Select a relative accessibility range. Slider the slider from left to right will generate
+                        activities that are more accessible to less accessible.
+                    </li>
+                    <li>
+                        Hit the submit button!
+                    </li>
+                    <li>
+                        Sometimes there may not be an activity that fits all of your desired conditions. If that is the
+                        case, try mixing around with new choices and generate another activity.
+                    </li>
+                </ol>
+
+            </article>
+
+            <form action="">
+                <article class="game-container">
+                    <fieldset>
+                        <legend>1. ACTIVITY</legend>
+                        <label for="activity">Select one of the types of activities you would like to do.</label>
+                        <p></p>
+                        <div id="selectordiv">
+                            <select name="activitytype" id="activitytype">
+                                <option value="education">Education</option>
+                                <option value="recreational">Recreational</option>
+                                <option value="social">Social</option>
+                                <option value="diy">DIY</option>
+                                <option value="charity">Charity</option>
+                                <option value="cooking">Cooking</option>
+                                <option value="relaxation">Relaxation</option>
+                                <option value="music">Music</option>
+                                <option value="busywork">Busywork</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>2. PRICE</legend>
+                        <label for="price">Please select a relative price range.</label>
+
+                        <div class="slider">
+                            <label>Cheaper</label>
+                            <input type="range" id="slider" name="price" min="0" max="1" step="0.1">
+                            <label>Expensive</label>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>3. PEOPLE</legend>
+                        <label for="people">Please select number of people.</label>
+                        <p></p>
+                        <div id="selectordiv">
+                            <select name="peoplenumber" id="peoplenumber">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>4. ACCESSIBILITY</legend>
+                        <label for="accessibility">Please select level of accessibility.</label>
+                        <div class="slider">
+                            <label>Less Accessible</label>
+                            <input type="range" id="slider" name="accessibility" min="0" max="1" step="0.1">
+                            <label>More Accessible</label>
+                        </div>
+                    </fieldset>
+
+                </article>
+                <article>
+                    <fieldset id="submitreview">
+                        <legend>Submit Your Selections!</legend>
+                        <label for="submit"></label>
+                        <button type="submit" id="submit" name="data">Click here to see your activity</button>
+                    </fieldset>
+                </article>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
